@@ -3,7 +3,6 @@
     "name": "HotShop",
     "slug": "OnlineShoppingApp",
     "privacy": "public",
-    "sdkVersion": "35.0.0",
     "platforms": [
       "ios",
       "android",

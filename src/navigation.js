@@ -28,6 +28,7 @@ class AuthLoadingScreen extends React.Component {
     constructor() {
       super();
       this._bootstrapAsync();
+      
     }
   
     // Fetch the token from storage then navigate to our appropriate place
@@ -38,7 +39,9 @@ class AuthLoadingScreen extends React.Component {
       // screen will be unmounted and thrown away.
       this.props.navigation.navigate(userToken ? 'App' : 'Auth');
     };
-  
+    
+    
+    
     // Render any loading content that you like here
     render() {
       return (
@@ -201,7 +204,9 @@ const SwitchNavigtor = createSwitchNavigator(
         AuLoading: AuthLoadingScreen
     },
     {
-        initialRouteName:'AuLoading'
+        initialRouteName:'App'
+        //login feature
+        //initialRouteName:'AuthLoadingScreen'
     }
 )
 const AppContainer = createAppContainer(SwitchNavigtor)
